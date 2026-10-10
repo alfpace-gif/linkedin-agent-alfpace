@@ -112,10 +112,14 @@ da verificare: {{dato mancante}} alla riga 6
 Scrivi "sì" per salvarlo in Contenuti come "pronto", o dimmi cosa cambiare.
 ```
 
-**5. Non pubblicare mai.** Su "sì", con Notion collegato, crea la riga in
-**Contenuti**: Titolo nella forma "Micro — {tema}", Canale, Formato, Data
-dello slot, Stato `pronto`, Angolo in una riga, Arco se c'è, e la bozza nel
-corpo pagina. Ricorda che il corpo pagina ospiterà il **testo pubblicato** e
+**5. Non pubblicare mai.** Su "sì", con Notion collegato, salva in
+**Contenuti**. Se esiste già la riga per quello slot (stessa Data, Canale e
+Formato), **aggiornala**: Stato `pronto`, Angolo se è cambiato, e la nuova
+bozza nel corpo pagina sotto un titolo datato ("## Bozza (giorno mese)"),
+senza cancellare le bozze precedenti né le Note editoriali. Solo se la riga
+non esiste, creala: Titolo nella forma "Micro — {tema}", Canale, Formato,
+Data dello slot, Stato `pronto`, Angolo in una riga, Arco se c'è, e la bozza
+nel corpo pagina. Ricorda che il corpo pagina ospiterà il **testo pubblicato** e
 che Alfonso spesso cambia il finale in pubblicazione: non è una discrepanza.
 Senza Notion, aggiungi data, cappello, formato e prima riga a
 `~/.claude/linkedin/log.md`.
