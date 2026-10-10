@@ -1,0 +1,125 @@
+{
+  "version": "1.0-it",
+  "note": "Aperture per i post di Alfonso Pace. Derivate dalle 21 formule di hooks.json, filtrate con how-i-write e le Regole editoriali: restano solo quelle compatibili con la voce, riscritte in italiano con esempi dal corpus pubblicato quando esistono. Le formule escluse sono in fondo, con il motivo. La prima riga deve reggere da sola: su mobile LinkedIn tronca intorno ai 140 caratteri.",
+  "rules": [
+    "Una sola idea per apertura.",
+    "La riga 2 è il seguito della riga 1, non una premessa alla riga 3.",
+    "Il fatto viene prima dell'aggettivo. Un numero vero batte qualsiasi enfasi, ma solo se è vero e databile.",
+    "Se l'apertura funziona con il nome di chiunque altro, non è un'apertura di Alfonso.",
+    "Niente epigrafe nei post: è il marcatore del longform.",
+    "Mai la stessa formula in due post consecutivi dello stesso canale."
+  ],
+  "hooks": [
+    {
+      "id": "fatto",
+      "name": "Fatto vissuto e databile",
+      "from": "#2 Number Reveal, #10 Receipt",
+      "template": "{Quando}, {cosa è successo ad Alfonso, in prima persona}.",
+      "example": "Da luglio lavoro con un nuovo fornitore.",
+      "best_for": "micro (default). Il formato più sicuro perché ancorato al vissuto.",
+      "trap": "Un fatto letto e non vissuto. Per il micro non regge: diventa materiale da insight."
+    },
+    {
+      "id": "scena",
+      "name": "Scena in due frasi",
+      "from": "#9 Story Cold Open",
+      "template": "{Luogo o situazione}. {Quando}.",
+      "example": "Aula di piccoli imprenditori. Tanti anni fa.",
+      "best_for": "micro, formato dialogo ricostruito. Il pezzo migliore finora parte così.",
+      "trap": "Una scena non realmente accaduta. Se vissuta da altri, attribuzione nominale. Da alternare, non ricorrente."
+    },
+    {
+      "id": "domanda-setup",
+      "name": "Domanda con setup concreto",
+      "from": "#8 Question Trap",
+      "template": "Chiedi a {ruolo preciso} {domanda che ha una risposta facile}.",
+      "example": "Chiedi a un marketing manager chi è il suo cliente.",
+      "best_for": "spinta articolo Warp 7, insight. Prepara il contrasto della riga 3-4.",
+      "trap": "Una domanda generica tipo 'sai davvero chi è il tuo cliente?'. Deve avere un interlocutore e una risposta prevedibile."
+    },
+    {
+      "id": "affermazione",
+      "name": "Affermazione netta da discutere",
+      "from": "#1 Contrarian Take, #11 Myth Bust",
+      "template": "{Pratica o convinzione diffusa} {giudizio netto}.",
+      "example": "Il fatturato come KPI è sopravvalutato.",
+      "best_for": "insight. La concessione arriva subito dopo: mai presentare le pratiche comuni come errori puri.",
+      "trap": "Contrarian su qualcosa che nessuno crede. E non costruirla come 'non è X, è Y': al massimo una negazione per pezzo."
+    },
+    {
+      "id": "osservazione",
+      "name": "Osservazione di scenario asciutta",
+      "from": "how-i-write, sezione 2",
+      "template": "{Cambiamento osservabile nel mercato o nelle aziende}.",
+      "example": "Una delle conseguenze della pandemia è stata la forte spinta all'adozione del digitale in azienda.",
+      "best_for": "insight, spinta articolo. Apertura di default degli insight.",
+      "trap": "Scivolare in 'In un mondo sempre più…' o 'Oggi più che mai…'. Deve nominare un fatto, non un'epoca."
+    },
+    {
+      "id": "aggancio-personale",
+      "name": "Aggancio personale con autoironia",
+      "from": "#6 Insider Secret",
+      "template": "{Da quanto tempo / per chi come me} {esperienza}, {dettaglio autoironico}.",
+      "example": "Mi occupo di marketing da sempre e una delle più grandi frustrazioni all'inizio è stato cercare di spiegare alla suocera il lavoro che facevo.",
+      "best_for": "cappello Alfonso, micro.",
+      "trap": "L'anzianità come credenziale da sbandierare. Funziona solo se il dettaglio è autoironico e specifico."
+    },
+    {
+      "id": "casi-contrapposti",
+      "name": "Due casi contrapposti",
+      "from": "#12 The Comparison",
+      "template": "{Azienda A} e {azienda B}, {stesso evento}, {stessa finestra}. {Comportamenti opposti}.",
+      "example": "",
+      "best_for": "insight, formato coppia di casi contrapposti.",
+      "trap": "Entrambi i lati devono essere vissuti in prima persona. Se uno viene criticato, restano anonime entrambe."
+    },
+    {
+      "id": "costo",
+      "name": "Il costo di un errore proprio",
+      "from": "#3 Mistake Confession",
+      "template": "{Cosa mi è costato}, {quale scelta}.",
+      "example": "",
+      "best_for": "cappello Alfonso, micro. La fiducia nasce dai pezzi in cui chi scrive non fa bella figura.",
+      "trap": "L'errore finto-umile. E niente cifre inventate: se il costo non è noto, chiedilo."
+    },
+    {
+      "id": "lente",
+      "name": "Lente filosofica su un fatto di lavoro",
+      "from": "voice.md, cappello Alfonso",
+      "template": "{Fatto di lavoro concreto}. {Il pensatore} lo aveva già detto meglio.",
+      "example": "",
+      "best_for": "cappello Alfonso. Epitteto, Seneca, Nietzsche, Goethe: uno per pezzo.",
+      "trap": "Aprire con la citazione: diventa un'epigrafe. Il fatto viene prima, la lente dopo."
+    },
+    {
+      "id": "tempo",
+      "name": "Prima e adesso, misurato",
+      "from": "#17 Time Anchor",
+      "template": "{Attività} richiedeva {tempo}. Oggi {tempo}.",
+      "example": "",
+      "best_for": "insight dimostrativo su processi e strumenti.",
+      "trap": "Rapporti incredibili e tool magici. Iperbole su AI e dati come panacea: lo sguardo resta critico."
+    },
+    {
+      "id": "buoni-ottimi",
+      "name": "Distinzione tra due comportamenti",
+      "from": "#16 Good vs Great",
+      "template": "{Chi fa X} {risultato}. {Chi fa Y} {risultato diverso}.",
+      "example": "",
+      "best_for": "micro, chiusure aforistiche.",
+      "trap": "Una distinzione che è solo 'impegnati di più'. Y deve essere un'azione diversa."
+    }
+  ],
+  "excluded": [
+    {"id": 4,  "name": "Before / After",   "why": "Storytelling da creator ('18 mesi fa ero…'): how-i-write lo esclude esplicitamente."},
+    {"id": 5,  "name": "The List Promise", "why": "Listicle: un solo elenco verticale per pezzo, e mai come struttura del post."},
+    {"id": 7,  "name": "The Callout",      "why": "Tono da coach ('Se stai ancora facendo X, smetti')."},
+    {"id": 13, "name": "Permission Slip",  "why": "'Hai il permesso di…' è il tu da coach motivazionale."},
+    {"id": 14, "name": "Pattern Interrupt","why": "Shock in una riga: hook da creator. La frase di rottura si usa nel corpo, non come esca."},
+    {"id": 15, "name": "The Warning",      "why": "Fa leva sulla paura: registro prescrittivo e promozionale."},
+    {"id": 18, "name": "The Unpopular Rule","why": "Posizionamento per dichiarazione assoluta senza fatto vissuto."},
+    {"id": 19, "name": "Curiosity Gap",    "why": "Clickbait: l'apertura deve dare, non trattenere."},
+    {"id": 20, "name": "The Walk-Away",    "why": "Teatro del sacrificio con risultato economico: hype."},
+    {"id": 21, "name": "The Direct Value", "why": "'Rubatelo' e lead magnet: niente promozione nei post BYI."}
+  ]
+}

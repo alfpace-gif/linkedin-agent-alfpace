@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "linkedin-agent-alfpace",
+  "description": "Pacchetto LinkedIn personale di Alfonso Pace",
+  "owner": {
+    "name": "Alfonso Pace"
+  },
+  "plugins": [
+    {
+      "name": "linkedin-agent-alfpace",
+      "description": "Undici skill LinkedIn adattate all'italiano e al sistema editoriale di Alfonso Pace (BYI, Warp 7): post nei formati micro/insight/spinta/ricondivisione, piano settimanale e audit su Notion, humanizer con lessico italiano.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

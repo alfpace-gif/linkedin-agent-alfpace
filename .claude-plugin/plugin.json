@@ -1,0 +1,17 @@
+{
+  "name": "linkedin-agent-alfpace",
+  "description": "Undici skill LinkedIn adattate all'italiano e al sistema editoriale di Alfonso Pace (BYI, Warp 7): post nei formati micro/insight/spinta/ricondivisione, piano settimanale e audit su Notion, humanizer con lessico italiano.",
+  "version": "1.1.0-it",
+  "author": {
+    "name": "Alfonso Pace (adattamento) · Avi Grondin (originale)",
+    "url": "https://github.com/avi691/linkedin-agent-skill"
+  },
+  "license": "MIT",
+  "keywords": [
+    "linkedin",
+    "italiano",
+    "humanizer",
+    "warp7",
+    "byi"
+  ]
+}
